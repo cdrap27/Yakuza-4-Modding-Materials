@@ -1,7 +1,10 @@
 package Controller;
 
+import Read.readDesigns;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class DashboardController {
     public TableView modList;
@@ -27,6 +30,16 @@ public class DashboardController {
     public RadioButton mainAll;
     public ToggleGroup mainSelector;
     public RadioButton mainStillNeeded;
+
+    @FXML
+    private void initialize(){
+        readDesigns.setDesignList();
+        partsList.setItems(readDesigns.getDesignList());
+        partsListName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        partsLIstLocation.setCellValueFactory(new PropertyValueFactory<>("location"));
+        partsListCost.setCellValueFactory(new PropertyValueFactory<>("cost"));
+
+    }
 
     public void onWeaponsBase(ActionEvent actionEvent) {
     }

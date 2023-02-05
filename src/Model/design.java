@@ -17,4 +17,28 @@ public class design {
         }
         cost = sb.toString();
     }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setLocation(String location){
+        this.location = location;
+    }
+
+    public void setCost(String cost){
+        this.cost = cost;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public String getLocation(){
+        return location;
+    }
+
+    public String getCost(){
+        return cost;
+    }
 }

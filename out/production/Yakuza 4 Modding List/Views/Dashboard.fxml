@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -22,29 +24,31 @@
          <children>
             <TableView fx:id="modList" layoutX="106.0" layoutY="73.0" prefHeight="200.0" prefWidth="801.0">
               <columns>
-                <TableColumn fx:id="modListName" prefWidth="105.0" text="Name" />
-                <TableColumn fx:id="modLIstDesign" prefWidth="101.0" text="Design" />
-                  <TableColumn fx:id="modListBase" prefWidth="98.0" text="Base" />
-                  <TableColumn fx:id="modListMaterial1" prefWidth="79.0" text="Material 1" />
-                  <TableColumn fx:id="modLIstMaterial2" prefWidth="89.0" text="Material 2" />
-                  <TableColumn fx:id="modListCost" prefWidth="84.0" text="Cost" />
+                <TableColumn fx:id="modListName" prefWidth="138.0" text="Name" />
+                <TableColumn fx:id="modLIstDesign" prefWidth="132.0" text="Design" />
+                  <TableColumn fx:id="modListBase" prefWidth="156.0" text="Base" />
+                  <TableColumn fx:id="modListMaterial1" prefWidth="153.0" text="Material 1" />
+                  <TableColumn fx:id="modLIstMaterial2" prefWidth="146.0" text="Material 2" />
+                  <TableColumn fx:id="modListCost" prefWidth="75.0" text="Cost" />
               </columns>
             </TableView>
             <TableView fx:id="baseList" layoutX="107.0" layoutY="342.0" prefHeight="200.0" prefWidth="386.0">
               <columns>
-                <TableColumn fx:id="baseListName" prefWidth="75.0" text="Name" />
-                <TableColumn fx:id="baseListLocation" prefWidth="113.0" text="Location" />
-                  <TableColumn fx:id="baseListCost" prefWidth="76.0" text="Cost" />
+                <TableColumn fx:id="baseListName" prefWidth="114.0" text="Name" />
+                <TableColumn fx:id="baseListLocation" prefWidth="146.0" text="Location" />
+                  <TableColumn fx:id="baseListCost" prefWidth="77.0" text="Cost" />
+                  <TableColumn fx:id="baseListQty" prefWidth="48.0" text="Qty" />
               </columns>
             </TableView>
             <TableView fx:id="partsList" layoutX="521.0" layoutY="342.0" prefHeight="200.0" prefWidth="386.0">
               <columns>
-                <TableColumn fx:id="partsListName" prefWidth="75.0" text="Name" />
-                <TableColumn fx:id="partsLIstLocation" prefWidth="109.0" text="Location" />
-                  <TableColumn fx:id="partsListCost" prefWidth="72.0" text="Cost" />
+                <TableColumn fx:id="partsListName" prefWidth="114.0" text="Name" />
+                <TableColumn fx:id="partsLIstLocation" prefWidth="144.0" text="Location" />
+                  <TableColumn fx:id="partsListCost" prefWidth="74.0" text="Cost" />
+                  <TableColumn fx:id="partsListQty" prefWidth="53.0" text="Qty" />
               </columns>
             </TableView>
-            <Text layoutX="375.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yakuza 4 Weapon Modding">
+            <Text layoutX="106.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yakuza 4 Weapon Modding">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
@@ -67,6 +71,12 @@
                   <Font size="13.0" />
                </font>
             </Text>
+            <RadioButton fx:id="mainAll" layoutX="764.0" layoutY="20.0" mnemonicParsing="false" onAction="#onAll" text="All">
+               <toggleGroup>
+                  <ToggleGroup fx:id="mainSelector" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="mainStillNeeded" layoutX="820.0" layoutY="20.0" mnemonicParsing="false" onAction="#onStillNeeded" text="Still Needed" toggleGroup="$mainSelector" />
          </children>
       </AnchorPane>
    </children>
