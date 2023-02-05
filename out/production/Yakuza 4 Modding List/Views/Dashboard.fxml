@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashboardController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="997.0">
+         <children>
+            <TableView fx:id="modList" layoutX="106.0" layoutY="73.0" prefHeight="200.0" prefWidth="801.0">
+              <columns>
+                <TableColumn fx:id="modListName" prefWidth="105.0" text="Name" />
+                <TableColumn fx:id="modLIstDesign" prefWidth="101.0" text="Design" />
+                  <TableColumn fx:id="modListBase" prefWidth="98.0" text="Base" />
+                  <TableColumn fx:id="modListMaterial1" prefWidth="79.0" text="Material 1" />
+                  <TableColumn fx:id="modLIstMaterial2" prefWidth="89.0" text="Material 2" />
+                  <TableColumn fx:id="modListCost" prefWidth="84.0" text="Cost" />
+              </columns>
+            </TableView>
+            <TableView fx:id="baseList" layoutX="107.0" layoutY="342.0" prefHeight="200.0" prefWidth="386.0">
+              <columns>
+                <TableColumn fx:id="baseListName" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="baseListLocation" prefWidth="113.0" text="Location" />
+                  <TableColumn fx:id="baseListCost" prefWidth="76.0" text="Cost" />
+              </columns>
+            </TableView>
+            <TableView fx:id="partsList" layoutX="521.0" layoutY="342.0" prefHeight="200.0" prefWidth="386.0">
+              <columns>
+                <TableColumn fx:id="partsListName" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="partsLIstLocation" prefWidth="109.0" text="Location" />
+                  <TableColumn fx:id="partsListCost" prefWidth="72.0" text="Cost" />
+              </columns>
+            </TableView>
+            <Text layoutX="375.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yakuza 4 Weapon Modding">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Text layoutX="107.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon &amp; Gear List">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="107.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Base Equpment">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="modLIstOption" layoutX="757.0" layoutY="42.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="partsOption" layoutX="757.0" layoutY="304.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="baseOption" layoutX="343.0" layoutY="303.0" prefWidth="150.0" />
+            <Text layoutX="521.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parts/Designs">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
