@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="a">
-      <changelist_data name="LabUser" email="cdrap27@wgu.edu" />
+      <change afterPath="$PROJECT_DIR$/src/Model/design.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,9 @@
     <option name="height" value="876" />
   </component>
   <component name="ProjectId" id="2LJrfp8ObIMxPoXGD6JjFyP8XAC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -327,7 +331,35 @@
       <option name="project" value="LOCAL" />
       <updated>1675605343565</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="a">
+      <created>1675605924403</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1675605924403</updated>
+    </task>
+    <task id="LOCAL-00012" summary="a">
+      <created>1675605963480</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675605963480</updated>
+    </task>
+    <task id="LOCAL-00013" summary="a">
+      <created>1675605980394</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675605980394</updated>
+    </task>
+    <task id="LOCAL-00014" summary="a">
+      <created>1675606060233</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1675606060233</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
