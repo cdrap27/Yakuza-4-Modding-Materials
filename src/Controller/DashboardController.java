@@ -7,6 +7,5 @@ public class DashboardController {
     }
 
     public void onGearBase(ActionEvent actionEvent) {
-        System.out.println("hello");
     }
 }
