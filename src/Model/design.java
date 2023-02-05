@@ -16,6 +16,16 @@ public class design {
             }
         }
         cost = sb.toString();
+        String costing = "36";
+        if(cost.isBlank()){
+            cost = "0";
+
+        }
+        if(Integer.parseInt(cost) < 100){
+            cost = "free";
+        }
+
+
     }
 
     public void setName(String name){
