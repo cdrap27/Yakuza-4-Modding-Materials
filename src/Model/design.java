@@ -4,8 +4,10 @@ public class design {
     private String name;
     private String location;
     private String cost;
+    private int qty;
+    private Boolean isDesign;
 
-    public design(String name, String location){
+    public design(String name, String location, int qty, Boolean isDesign){
         this.name = name;
         this.location = location;
         char[] chars = location.toCharArray();
@@ -16,15 +18,15 @@ public class design {
             }
         }
         cost = sb.toString();
-        String costing = "36";
         if(cost.isBlank()){
             cost = "0";
 
         }
-        if(Integer.parseInt(cost) < 100){
+        if(Integer.parseInt(cost) < 1){
             cost = "free";
         }
-
+        this.qty = qty;
+        this.isDesign = isDesign;
 
     }
 
@@ -40,6 +42,14 @@ public class design {
         this.cost = cost;
     }
 
+    public void setQty(int qty){
+        this.qty = qty;
+    }
+
+    public void setIsDesign(Boolean isDesign){
+        this.isDesign = isDesign;
+    }
+
     public String getName(){
         return name;
     }
@@ -50,5 +60,13 @@ public class design {
 
     public String getCost(){
         return cost;
+    }
+
+    public int getQty(){
+        return qty;
+    }
+
+    public Boolean getIsDesign(){
+        return isDesign;
     }
 }

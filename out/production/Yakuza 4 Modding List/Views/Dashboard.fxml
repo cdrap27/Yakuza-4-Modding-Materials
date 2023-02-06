@@ -20,9 +20,9 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="587.0" prefWidth="997.0">
+      <AnchorPane prefHeight="896.0" prefWidth="1395.0">
          <children>
-            <TableView fx:id="modList" layoutX="106.0" layoutY="73.0" prefHeight="200.0" prefWidth="801.0">
+            <TableView fx:id="modList" layoutX="51.0" layoutY="94.0" prefHeight="322.0" prefWidth="1288.0">
               <columns>
                 <TableColumn fx:id="modListName" prefWidth="138.0" text="Name" />
                 <TableColumn fx:id="modLIstDesign" prefWidth="132.0" text="Design" />
@@ -32,51 +32,51 @@
                   <TableColumn fx:id="modListCost" prefWidth="75.0" text="Cost" />
               </columns>
             </TableView>
-            <TableView fx:id="baseList" layoutX="107.0" layoutY="342.0" prefHeight="200.0" prefWidth="386.0">
+            <TableView fx:id="baseList" layoutX="58.0" layoutY="521.0" prefHeight="322.0" prefWidth="602.0">
               <columns>
-                <TableColumn fx:id="baseListName" prefWidth="114.0" text="Name" />
-                <TableColumn fx:id="baseListLocation" prefWidth="146.0" text="Location" />
-                  <TableColumn fx:id="baseListCost" prefWidth="77.0" text="Cost" />
+                <TableColumn fx:id="baseListName" prefWidth="146.0" text="Name" />
+                <TableColumn fx:id="baseListLocation" prefWidth="300.0" text="Location" />
+                  <TableColumn fx:id="baseListCost" prefWidth="107.0" text="Cost" />
                   <TableColumn fx:id="baseListQty" prefWidth="48.0" text="Qty" />
               </columns>
             </TableView>
-            <TableView fx:id="partsList" layoutX="521.0" layoutY="342.0" prefHeight="200.0" prefWidth="386.0">
+            <TableView fx:id="partsList" layoutX="738.0" layoutY="521.0" prefHeight="322.0" prefWidth="602.0">
               <columns>
-                <TableColumn fx:id="partsListName" prefWidth="114.0" text="Name" />
-                <TableColumn fx:id="partsLIstLocation" prefWidth="144.0" text="Location" />
-                  <TableColumn fx:id="partsListCost" prefWidth="74.0" text="Cost" />
-                  <TableColumn fx:id="partsListQty" prefWidth="53.0" text="Qty" />
+                <TableColumn fx:id="partsListName" prefWidth="159.0" text="Name" />
+                <TableColumn fx:id="partsLIstLocation" prefWidth="295.0" text="Location" />
+                  <TableColumn fx:id="partsListCost" prefWidth="97.0" text="Cost" />
+                  <TableColumn fx:id="partsListQty" prefWidth="50.0" text="Qty" />
               </columns>
             </TableView>
-            <Text layoutX="106.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yakuza 4 Weapon Modding">
+            <Text layoutX="51.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yakuza 4 Weapon Modding">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
             </Text>
-            <Text layoutX="107.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon &amp; Gear List">
+            <Text layoutX="51.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapon &amp; Gear List">
                <font>
                   <Font size="13.0" />
                </font>
             </Text>
-            <Text layoutX="107.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Base Equpment">
+            <Text layoutX="76.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Base Equpment">
                <font>
                   <Font size="13.0" />
                </font>
             </Text>
-            <ChoiceBox fx:id="modLIstOption" layoutX="757.0" layoutY="42.0" prefWidth="150.0" />
-            <ChoiceBox fx:id="partsOption" layoutX="757.0" layoutY="304.0" prefWidth="150.0" />
-            <ChoiceBox fx:id="baseOption" layoutX="343.0" layoutY="303.0" prefWidth="150.0" />
-            <Text layoutX="521.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parts/Designs">
+            <ChoiceBox fx:id="modLIstOption" layoutX="1190.0" layoutY="62.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="partsOption" layoutX="1190.0" layoutY="485.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="baseOption" layoutX="507.0" layoutY="485.0" prefWidth="150.0" />
+            <Text layoutX="742.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parts/Designs">
                <font>
                   <Font size="13.0" />
                </font>
             </Text>
-            <RadioButton fx:id="mainAll" layoutX="764.0" layoutY="20.0" mnemonicParsing="false" onAction="#onAll" text="All">
+            <RadioButton fx:id="mainAll" layoutX="1197.0" layoutY="40.0" mnemonicParsing="false" onAction="#onAll" selected="true" text="All">
                <toggleGroup>
                   <ToggleGroup fx:id="mainSelector" />
                </toggleGroup>
             </RadioButton>
-            <RadioButton fx:id="mainStillNeeded" layoutX="820.0" layoutY="20.0" mnemonicParsing="false" onAction="#onStillNeeded" text="Still Needed" toggleGroup="$mainSelector" />
+            <RadioButton fx:id="mainStillNeeded" layoutX="1253.0" layoutY="40.0" mnemonicParsing="false" onAction="#onStillNeeded" text="Still Needed" toggleGroup="$mainSelector" />
          </children>
       </AnchorPane>
    </children>

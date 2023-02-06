@@ -1,6 +1,8 @@
 package Controller;
 
+import Read.readBase;
 import Read.readDesigns;
+import Read.readMods;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -33,11 +35,26 @@ public class DashboardController {
 
     @FXML
     private void initialize(){
-        readDesigns.setDesignList();
         partsList.setItems(readDesigns.getDesignList());
         partsListName.setCellValueFactory(new PropertyValueFactory<>("name"));
         partsLIstLocation.setCellValueFactory(new PropertyValueFactory<>("location"));
         partsListCost.setCellValueFactory(new PropertyValueFactory<>("cost"));
+        partsListQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
+
+        modList.setItems(readMods.getModList());
+        modListName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        modListBase.setCellValueFactory(new PropertyValueFactory<>("base"));
+        modLIstDesign.setCellValueFactory(new PropertyValueFactory<>("design"));
+        modListMaterial1.setCellValueFactory(new PropertyValueFactory<>("material1"));
+        modLIstMaterial2.setCellValueFactory(new PropertyValueFactory<>("material2"));
+        modListCost.setCellValueFactory(new PropertyValueFactory<>("cost"));
+
+        baseList.setItems(readBase.getBaseList());
+        baseListName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        baseListCost.setCellValueFactory(new PropertyValueFactory<>("cost"));
+        baseListLocation.setCellValueFactory(new PropertyValueFactory<>("location"));
+        baseListQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
+
 
     }
 
@@ -48,8 +65,10 @@ public class DashboardController {
     }
 
     public void onAll(ActionEvent actionEvent) {
+        partsList.setItems(readDesigns.getDesignList());
     }
 
     public void onStillNeeded(ActionEvent actionEvent) {
+        partsList.setItems(readDesigns.getCompletedDesignList());
     }
 }
