@@ -51,7 +51,6 @@ public class readBase {
         for (int i = 0; i < readMods.getCompleteModList().size(); i++) {
             for (int j = 0; j < readBase.getCompletedBaseList().size(); j++) {
                 if (readMods.getCompleteModList().get(i).getBase().equals(readBase.getCompletedBaseList().get(j).getName())) {
-                    System.out.println("add base");
                     readBase.getCompletedBaseList().get(j).setQty(readBase.getCompletedBaseList().get(j).getQty() + 1);
                 }
             }
@@ -62,7 +61,6 @@ public class readBase {
         for (int i = 0; i < readMods.getModList().size(); i++) {
             for (int j = 0; j < readBase.getBaseList().size(); j++) {
                 if (readMods.getModList().get(i).getBase().equals(readBase.getBaseList().get(j).getName())) {
-                    System.out.println("add base");
                     readBase.getBaseList().get(j).setQty(readBase.getBaseList().get(j).getQty() + 1);
                 }
             }

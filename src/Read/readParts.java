@@ -30,7 +30,6 @@ public class readParts {
             for(int j = 0; j < readDesigns.getDesignList().size(); j++){
                 if(readMods.getModList().get(i).getMaterial1().equals(readDesigns.getDesignList().get(j).getName()) ||
                         readMods.getModList().get(i).getMaterial2().equals(readDesigns.getDesignList().get(j).getName())){
-                    System.out.println("add qty");
                     readDesigns.getDesignList().get(j).setQty(readDesigns.getDesignList().get(j).getQty() + 1);
                 }
             }
@@ -43,7 +42,6 @@ public class readParts {
             for(int j = 0; j < readDesigns.getCompletedDesignList().size(); j++){
                 if(readMods.getCompleteModList().get(i).getMaterial1().equals(readDesigns.getCompletedDesignList().get(j).getName()) ||
                         readMods.getCompleteModList().get(i).getMaterial2().equals(readDesigns.getCompletedDesignList().get(j).getName())){
-                    System.out.println("add qty");
                     readDesigns.getCompletedDesignList().get(j).setQty(readDesigns.getCompletedDesignList().get(j).getQty() + 1);
                 }
             }

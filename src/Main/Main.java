@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -21,6 +22,21 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        setLists();
+        Parent root = FXMLLoader.load(getClass().getResource("../Views/Dashboard.fxml"));
+        primaryStage.setTitle("Dashboard");
+        primaryStage.setScene(new Scene(root, 1395, 896));
+        primaryStage.centerOnScreen();
+        primaryStage.show();
+    }
+
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+
+    public void setLists() throws IOException {
         Read.openCSV.setLines("designs");
         readDesigns.setDesignList();
         Read.openCSV.setCompleteLines("designs");
@@ -41,15 +57,6 @@ public class Main extends Application {
         readParts.setQty();
         readBase.setCompleteQty();
         readBase.setQty();
-        Parent root = FXMLLoader.load(getClass().getResource("../Views/Dashboard.fxml"));
-        primaryStage.setTitle("Dashboard");
-        primaryStage.setScene(new Scene(root, 1395, 896));
-        primaryStage.centerOnScreen();
-        primaryStage.show();
-    }
 
-
-    public static void main(String[] args) {
-        launch(args);
     }
 }
