@@ -66,9 +66,13 @@ public class DashboardController {
 
     public void onAll(ActionEvent actionEvent) {
         partsList.setItems(readDesigns.getDesignList());
+        modList.setItems(readMods.getModList());
+        baseList.setItems(readBase.getBaseList());
     }
 
     public void onStillNeeded(ActionEvent actionEvent) {
         partsList.setItems(readDesigns.getCompletedDesignList());
+        modList.setItems(Read.readMods.getCompleteModList());
+        baseList.setItems(Read.readBase.getCompletedBaseList());
     }
 }

@@ -15,7 +15,7 @@ import java.util.List;
 public class readMods {
     public static  ArrayList<String> weapon;
     private static ObservableList<mods> modList = FXCollections.observableArrayList();
-    private ObservableList<mods> completeModList = FXCollections.observableArrayList();
+    private static ObservableList<mods> completeModList = FXCollections.observableArrayList();
 
     public static void setModList() throws FileNotFoundException {
         File file = new File("weapons.txt");
@@ -43,4 +43,16 @@ public class readMods {
         return modList;
     }
 
+    public static void setCompletedDesignList() {
+        for(int i = 0; i < openCSV.getLines().size(); i++){
+            List<String> values = Arrays.asList(openCSV.getLines().get(i).split(","));
+            mods m = new mods(values.get(0), values.get(1), values.get(2), values.get(3), values.get(4), (values.get(5))+","+values.get(6));
+            completeModList.add(m);
+
+        }
+    }
+
+    public static ObservableList<mods> getCompleteModList(){
+        return completeModList;
+    }
 }

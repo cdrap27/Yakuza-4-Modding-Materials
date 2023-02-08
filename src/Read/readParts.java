@@ -25,4 +25,32 @@ public class readParts {
         }
     }
 
+    public static void setQty(){
+        for(int i = 0; i < readMods.getModList().size(); i++){
+            for(int j = 0; j < readDesigns.getDesignList().size(); j++){
+                if(readMods.getModList().get(i).getMaterial1().equals(readDesigns.getDesignList().get(j).getName()) ||
+                        readMods.getModList().get(i).getMaterial2().equals(readDesigns.getDesignList().get(j).getName())){
+                    System.out.println("add qty");
+                    readDesigns.getDesignList().get(j).setQty(readDesigns.getDesignList().get(j).getQty() + 1);
+                }
+            }
+        }
+
+    }
+
+    public static void setCompleteQty(){
+        for(int i = 0; i < readMods.getCompleteModList().size(); i++){
+            for(int j = 0; j < readDesigns.getCompletedDesignList().size(); j++){
+                if(readMods.getCompleteModList().get(i).getMaterial1().equals(readDesigns.getCompletedDesignList().get(j).getName()) ||
+                        readMods.getCompleteModList().get(i).getMaterial2().equals(readDesigns.getCompletedDesignList().get(j).getName())){
+                    System.out.println("add qty");
+                    readDesigns.getCompletedDesignList().get(j).setQty(readDesigns.getCompletedDesignList().get(j).getQty() + 1);
+                }
+            }
+        }
+     // for(int i = 0; i < readDesigns.getCompletedDesignList().size(); i++){
+         /* if(!readDesigns.getCompletedDesignList().get(i).getIsDesign())
+          readDesigns.getCompletedDesignList().get(i).setQty(readDesigns.getCompletedDesignList().get(i).getQty() -1);
+      }*/
+    }
 }

@@ -2,25 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="a">
-      <change afterPath="$PROJECT_DIR$/src/Model/base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/mods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Read/readBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Read/readMods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Read/readParts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completedmodded.csv" beforeDir="false" afterPath="$PROJECT_DIR$/completedmodded.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/completedparts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/completedparts.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modded.csv" beforeDir="false" afterPath="$PROJECT_DIR$/modded.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Controller/DashboardController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Model/design.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Model/design.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Read/openCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Read/openCSV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Read/readDesigns.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Read/readDesigns.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Views/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Views/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Read/readBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Read/readBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Read/readMods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Read/readMods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Read/readParts.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Yakuza 4 Modding List/Read/readParts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/parts.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DashboardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/design.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/design.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Read/openCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Read/openCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Read/readBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Read/readBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Read/readDesigns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Read/readDesigns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Read/readMods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Read/readMods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Read/readParts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Read/readParts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weapons.txt" beforeDir="false" afterPath="$PROJECT_DIR$/weapons.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -403,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675689936593</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="a">
+      <created>1675703711986</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1675703711986</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
